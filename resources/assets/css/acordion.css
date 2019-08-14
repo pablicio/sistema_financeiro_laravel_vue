@@ -1,0 +1,48 @@
+
+.accordion H2 A{
+    padding: 10px 20px;
+    font-size: 0.9em;
+    background: #fff;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 0;
+    color: #00e5eb !important;
+    font-size: 14px;
+}
+.accordion H2{
+    margin: 0;
+}
+.accordion P {
+    margin: 24px 0;
+}
+.accordion
+{
+    margin-top: 34px;
+}
+.accordion + H1
+{
+    margin-top: 64px;
+}
+.accordion H2 A:before
+{
+    content: '+';
+    margin-right: 16px;
+    font-family: arial;
+    font-weight: normal;
+    width: 5px;
+    display: inline-block;
+}
+.accordion H2 A.selected:before
+{
+    content: '-';
+    margin-right: 16px;
+    font-family: arial;
+    font-weight: normal;
+    width: 5px;
+    display: inline-block;
+}
+.accordion .inner
+{
+    padding: 10px 20px;
+    background:#fff
+}

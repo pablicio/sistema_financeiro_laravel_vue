@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "scripts": {
+    "prod": "gulp --production",
+    "dev": "gulp watch"
+  },
+  "devDependencies": {
+    "axios": "^0.15.3",
+    "gulp": "^3.9.1",
+    "jquery": "^3.1.0",
+    "laravel-elixir": "^6.0.0-14",
+    "laravel-elixir-vue-2": "^0.2.0",
+    "laravel-elixir-webpack-official": "^1.0.2",
+    "lodash": "^4.16.2",
+    "vue": "^2.0.1",
+    "vue-resource": "^1.0.3"
+  },
+  "dependencies": {
+    "axios": "^0.15.3",
+    "datatables": "^1.10.13",
+    "moment": "^2.18.1",
+    "select2": "^4.0.3",
+    "sweetalert": "^2.0.3",
+    "uniform": "^0.5.1",
+    "vue-datatable": "^1.0.4",
+    "vue-router": "^2.7.0",
+    "vue-select": "github:sagalbot/vue-select",
+    "vueify": "^9.4.1"
+  }
+}

@@ -1,0 +1,370 @@
+/* ------------------------------------------------------------------------------
+*
+*  # Switchery toggles
+*
+*  Styles for switchery.min.js - toggle switches
+*
+*  Version: 1.0
+*  Latest update: Mar 25, 2015
+*
+* ---------------------------------------------------------------------------- */
+.switchery {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-block;
+    width: 44px;
+    height: 22px;
+    vertical-align: middle;
+    position: relative;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.checkbox-switchery .switchery {
+    position: absolute;
+    left: 0;
+    margin-top: -2px;
+}
+.switchery > small {
+    background-color: #fff;
+    border-radius: 100px;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+.checkbox.checkbox-switchery {
+    margin-bottom: 14px;
+    padding-left: 0;
+}
+.checkbox.checkbox-switchery.disabled .switchery {
+    cursor: not-allowed;
+}
+.checkbox[class*=switchery-],
+.checkbox-inline[class*=switchery-] {
+    padding-left: 0;
+    padding-right: 0;
+}
+.switchery-lg.checkbox-switchery {
+    margin-bottom: 18px;
+}
+.switchery-lg.checkbox-switchery .switchery {
+    margin-top: -4px;
+}
+label.switchery-lg {
+    margin-bottom: 0;
+}
+.switchery-lg .switchery {
+    height: 26px;
+    width: 52px;
+}
+.switchery-lg .switchery > small {
+    height: 26px;
+    width: 26px;
+}
+.switchery-sm.checkbox-switchery {
+    margin-bottom: 10px;
+}
+.switchery-sm.checkbox-switchery .switchery {
+    margin-top: 0px;
+}
+label.switchery-sm {
+    margin-bottom: 0;
+}
+.switchery-sm .switchery {
+    height: 18px;
+    width: 36px;
+}
+.switchery-sm .switchery > small {
+    height: 18px;
+    width: 18px;
+}
+.switchery-xs.checkbox-switchery {
+    margin-bottom: 6px;
+}
+.switchery-xs.checkbox-switchery .switchery {
+    margin-top: 2px;
+}
+label.switchery-xs {
+    margin-bottom: 0;
+}
+.switchery-xs .switchery {
+    height: 14px;
+    width: 28px;
+}
+.switchery-xs .switchery > small {
+    height: 14px;
+    width: 14px;
+}
+.checkbox-switchery label,
+label.checkbox-switchery {
+    position: relative;
+    padding-left: 56px;
+    margin: 0;
+    cursor: pointer;
+}
+.checkbox-switchery.switchery-lg label,
+label.checkbox-switchery.switchery-lg {
+    padding-left: 64px;
+}
+.checkbox-switchery.switchery-sm label,
+label.checkbox-switchery.switchery-sm {
+    padding-left: 48px;
+}
+.checkbox-switchery.switchery-xs label,
+label.checkbox-switchery.switchery-xs {
+    padding-left: 40px;
+}
+.checkbox-switchery.checkbox-inline {
+    margin-bottom: 0;
+}
+.checkbox-switchery.checkbox-right .switchery {
+    left: auto;
+    right: 0;
+}
+.checkbox-switchery.checkbox-right label,
+label.checkbox-switchery.checkbox-right {
+    padding-left: 0;
+    padding-right: 56px;
+}
+.checkbox-switchery.checkbox-right.switchery-lg label,
+label.checkbox-switchery.checkbox-right.switchery-lg {
+    padding-left: 0;
+    padding-right: 64px;
+}
+.checkbox-switchery.checkbox-right.switchery-sm label,
+label.checkbox-switchery.checkbox-right.switchery-sm {
+    padding-left: 0;
+    padding-right: 48px;
+}
+.checkbox-switchery.checkbox-right.switchery-xs label,
+label.checkbox-switchery.checkbox-right.switchery-xs {
+    padding-left: 0;
+    padding-right: 40px;
+}
+.switchery-double .switchery {
+    position: relative;
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-top: -7px;
+    margin-bottom: -5px;
+}
+.switchery-double.checkbox-switchery label,
+label.switchery-double.checkbox-switchery {
+    padding: 0;
+}
+.switchery-double.switchery-lg .switchery {
+    margin-top: -8px;
+    margin-bottom: -6px;
+}
+.switchery-double.switchery-sm .switchery {
+    margin-top: -6px;
+    margin-bottom: -4px;
+}
+.switchery-double.switchery-xs .switchery {
+    margin-top: -5px;
+    margin-bottom: -3px;
+}
+/* ------------------------------------------------------------------------------
+*
+*  # Bootstrap switches
+*
+*  Styles for switch.min.js - checkbox/radio toggle switches
+*
+*  Version: 1.1
+*  Latest update: Oct 20, 2015
+*
+* ---------------------------------------------------------------------------- */
+.bootstrap-switch {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: -2px;
+    margin-right: 7px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all ease-in-out 0.05s;
+    -o-transition: all ease-in-out 0.05s;
+    transition: all ease-in-out 0.05s;
+}
+.bootstrap-switch .bootstrap-switch-container {
+    display: inline-block;
+    top: 0;
+    border-radius: 3px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.bootstrap-switch.bootstrap-switch-focused {
+    outline: 0;
+}
+.bootstrap-switch .bootstrap-switch-handle-on,
+.bootstrap-switch .bootstrap-switch-handle-off,
+.bootstrap-switch .bootstrap-switch-label {
+    cursor: pointer;
+    display: inline-block !important;
+    height: 100%;
+    padding: 7px 12px;
+}
+.bootstrap-switch input[type='radio'],
+.bootstrap-switch input[type='checkbox'] {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.bootstrap-switch input[type='radio'].form-control,
+.bootstrap-switch input[type='checkbox'].form-control {
+    height: auto;
+}
+.bootstrap-switch.bootstrap-switch-disabled,
+.bootstrap-switch.bootstrap-switch-readonly,
+.bootstrap-switch.bootstrap-switch-indeterminate {
+    cursor: default !important;
+}
+.bootstrap-switch.bootstrap-switch-disabled .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-readonly .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-indeterminate .bootstrap-switch-handle-on,
+.bootstrap-switch.bootstrap-switch-disabled .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-readonly .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-indeterminate .bootstrap-switch-handle-off,
+.bootstrap-switch.bootstrap-switch-disabled .bootstrap-switch-label,
+.bootstrap-switch.bootstrap-switch-readonly .bootstrap-switch-label,
+.bootstrap-switch.bootstrap-switch-indeterminate .bootstrap-switch-label {
+    cursor: default !important;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.bootstrap-switch.bootstrap-switch-animate .bootstrap-switch-container {
+    -webkit-transition: margin-left 0.2s;
+    -o-transition: margin-left 0.2s;
+    transition: margin-left 0.2s;
+}
+.bootstrap-switch.bootstrap-switch-inverse .bootstrap-switch-handle-on {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.bootstrap-switch.bootstrap-switch-inverse .bootstrap-switch-handle-off {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+}
+.bootstrap-switch.bootstrap-switch-on .bootstrap-switch-label,
+.bootstrap-switch.bootstrap-switch-inverse.bootstrap-switch-off .bootstrap-switch-label {
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.bootstrap-switch.bootstrap-switch-off .bootstrap-switch-label,
+.bootstrap-switch.bootstrap-switch-inverse.bootstrap-switch-on .bootstrap-switch-label {
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+}
+.bootstrap-switch-handle-on,
+.bootstrap-switch-handle-off {
+    text-align: center;
+    z-index: 1;
+}
+.bootstrap-switch-handle-on.bootstrap-switch-default,
+.bootstrap-switch-handle-off.bootstrap-switch-default {
+    color: #333333;
+    background-color: #eeeeee;
+}
+.bootstrap-switch-handle-on.bootstrap-switch-primary,
+.bootstrap-switch-handle-off.bootstrap-switch-primary {
+    color: #fff;
+    background-color: #2196F3;
+}
+.bootstrap-switch-handle-on.bootstrap-switch-danger,
+.bootstrap-switch-handle-off.bootstrap-switch-danger {
+    color: #fff;
+    background-color: #F44336;
+}
+.bootstrap-switch-handle-on.bootstrap-switch-success,
+.bootstrap-switch-handle-off.bootstrap-switch-success {
+    color: #fff;
+    background-color: #4CAF50;
+}
+.bootstrap-switch-handle-on.bootstrap-switch-warning,
+.bootstrap-switch-handle-off.bootstrap-switch-warning {
+    color: #fff;
+    background-color: #FF5722;
+}
+.bootstrap-switch-handle-on.bootstrap-switch-info,
+.bootstrap-switch-handle-off.bootstrap-switch-info {
+    color: #fff;
+    background-color: #00BCD4;
+}
+.bootstrap-switch-handle-on {
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+}
+.bootstrap-switch-handle-off {
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.bootstrap-switch-label {
+    text-align: center;
+    z-index: 100;
+    color: #333333;
+    background-color: #fff;
+    position: relative;
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+}
+.bootstrap-switch-label:hover {
+    background-color: #fcfcfc;
+}
+.bootstrap-switch-label:active {
+    background-color: #fafafa;
+}
+.bootstrap-switch-label:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 3px;
+    height: 10px;
+    margin-top: -5px;
+    margin-left: -1px;
+    display: inline-block;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.bootstrap-switch-large .bootstrap-switch-handle-on,
+.bootstrap-switch-large .bootstrap-switch-handle-off,
+.bootstrap-switch-large .bootstrap-switch-label {
+    padding: 9px 15px;
+}
+.bootstrap-switch-mini .bootstrap-switch-handle-on,
+.bootstrap-switch-mini .bootstrap-switch-handle-off,
+.bootstrap-switch-mini .bootstrap-switch-label {
+    padding: 5px 10px;
+}
+.bootstrap-switch-small .bootstrap-switch-handle-on,
+.bootstrap-switch-small .bootstrap-switch-handle-off,
+.bootstrap-switch-small .bootstrap-switch-label {
+    padding: 6px 11px;
+}
+.checkbox-switch > label,
+label.checkbox-switch.checkbox-inline {
+    padding: 0;
+}
+.checkbox-switch.checkbox-right .bootstrap-switch {
+    margin-right: 0;
+    margin-left: 7px;
+}
